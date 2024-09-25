@@ -2,9 +2,9 @@
 
 int main() {
     char S[101];
-    int A;
+    unsigned short A;
     scanf("%100[^\n]", S);
-    scanf("%d", &A);
+    scanf("%hu", &A);
     printf("%s\n%d\n", S, A);
     return 0;
 }

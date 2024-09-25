@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int N;
-    scanf("%d", &N);
+    unsigned int N;
+    scanf("%u", &N);
     printf("%o\n", N);
     return 0;
 }

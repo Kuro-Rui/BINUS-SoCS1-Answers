@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    char A[20], B[20], C[20];
-    scanf("%s %s %s", A, B, C);
+    char A[21], B[21], C[21];
+    scanf("%20s %20s %20s", A, B, C);
     printf("%s %s %s\n", C, B, A);
     return 0;
 }

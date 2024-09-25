@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int N;
-    scanf("%d", &N);
-    printf("Selamat ulang tahun yang ke %d yaaa!\n", N);
+    unsigned short N;
+    scanf("%hu", &N);
+    printf("Selamat ulang tahun yang ke %hu yaaa!\n", N);
     return 0;
 }
