@@ -11,4 +11,5 @@ int main() {
         if (N + M >= K) puts("yes");
         else puts("no");
     }
+    return 0;
 }

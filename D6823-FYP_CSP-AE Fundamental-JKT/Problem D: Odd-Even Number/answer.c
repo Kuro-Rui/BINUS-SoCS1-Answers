@@ -5,4 +5,5 @@ int main() {
     scanf("%hu", &A);
     if (A % 2) puts("ODD");
     else puts("EVEN");
+    return 0;
 }
