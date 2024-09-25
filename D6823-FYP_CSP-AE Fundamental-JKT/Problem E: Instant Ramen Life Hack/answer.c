@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int T;
-    scanf("%d", &T);
+    unsigned short T;
+    unsigned int K, N, M;
+    scanf("%hu", &T);
 
-    int K[T], N[T], M[T];
-    for (int i = 0; i < T; i++) scanf("%d %d %d", &K[i], &N[i], &M[i]);
-    for (int i = 0; i < T; i++) {
-        printf("Case #%d: ", i + 1);
-        if (N[i] + M[i] >= K[i]) puts("yes");
+    for (int i = 1; i <= T; i++) {
+        scanf("%u %u %u", &K, &N, &M);
+        printf("Case #%d: ", i);
+        if (N + M >= K) puts("yes");
         else puts("no");
     }
 }

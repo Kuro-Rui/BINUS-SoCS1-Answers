@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int A;
-    scanf("%d", &A);
+    unsigned short A;
+    scanf("%hu", &A);
     if (A % 2) puts("ODD");
     else puts("EVEN");
 }

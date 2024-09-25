@@ -4,3 +4,6 @@
 # Any other reproduction in any form without the permission of School of Computer Science - BINUS is probihited.
 # Violators of this clause may be academically sanctioned.
 *.pdf
+
+# MacOS Stuff
+.DS_Store
