@@ -8,7 +8,7 @@ int main() {
     for (int i = 1; i <= T; i++) {
         scanf("%u %u", &N, &M);
         printf("Case #%d: ", i);
-        if ((long long)N * M % 2) puts("Need more frogs");
+        if ((unsigned long long)N * M % 2) puts("Need more frogs");
         else puts("Party time!");
     }
     return 0;
