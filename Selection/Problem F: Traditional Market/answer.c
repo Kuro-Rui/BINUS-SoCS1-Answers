@@ -2,7 +2,7 @@
 
 struct Item {
     int budget;
-    char* group;
+    char* label;
 };
 
 int main() {
@@ -20,6 +20,6 @@ int main() {
             }
         }
     }
-    for (int i = 0; i < 3; i++) printf("%s\n", items[i].group);
+    for (int i = 0; i < 3; i++) printf("%s\n", items[i].label);
     return 0;
 }
