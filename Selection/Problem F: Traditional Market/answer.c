@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 struct Item {
-    int budget;
+    unsigned int budget;
     char* label;
 };
 
