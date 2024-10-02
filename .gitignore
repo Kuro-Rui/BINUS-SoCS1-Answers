@@ -7,3 +7,6 @@ prob-*.pdf
 
 # MacOS Stuff
 .DS_Store
+
+# VSCode Stuff
+.vscode/*

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-struct Participant {
+typedef struct {
     unsigned short score;
     char* name;
-};
+} Participant;
 
 int main() {
     unsigned short N;
@@ -13,7 +13,7 @@ int main() {
     unsigned short jojo, lili, bibi;
     scanf("%hu %hu %hu", &jojo, &lili, &bibi);
     unsigned short totalScore = jojo + lili + bibi;
-    struct Participant jolibi[3] = {{jojo, "Jojo"}, {lili, "Lili"}, {bibi, "Bibi"}};
+    Participant jolibi[3] = {{jojo, "Jojo"}, {lili, "Lili"}, {bibi, "Bibi"}};
 
     unsigned short score;
     for (int i = 0; i < N; i++) {
