@@ -22,9 +22,6 @@ int main() {
     }
 
     double average = (double)totalScore / totalParticipants;
-    for (int i = 0; i < 3; i++) {
-        if (jolibi[i].score >= average) printf("%s lolos", jolibi[i].name);
-        else printf("%s tidak lolos", jolibi[i].name);
-    }
+    for (int i = 0; i < 3; i++) printf("%s %slolos\n", jolibi[i].name, jolibi[i].score >= average ? "" : "tidak ");
     return 0;
 }

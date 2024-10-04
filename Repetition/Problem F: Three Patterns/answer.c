@@ -18,10 +18,7 @@ int main() {
     printf("\n");
 
     for (int i = 0; i < N; i++) {
-        for (int j = 1; j <= N; j++) {
-            if (j % K) printf(".");
-            else printf("#");
-        }
+        for (int j = 1; j <= N; j++) printf(j % K ? "." : "#");
         printf("\n");
     }
     return 0;

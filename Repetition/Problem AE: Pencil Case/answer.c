@@ -5,10 +5,10 @@ int main() {
     unsigned short T, R, H;
     scanf("%hu", &T);
     
-    for (int i = 1; i <= T; i++) {
+    for (int t = 1; t <= T; t++) {
         scanf("%hu %hu", &R, &H);
         double surfaceArea = 2 * pi * R * (R + H);
-        printf("Case #%d: %.2f\n", i, surfaceArea);
+        printf("Case #%d: %.2f\n", t, surfaceArea);
     }
     return 0;
 }

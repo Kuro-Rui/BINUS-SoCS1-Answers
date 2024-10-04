@@ -1,20 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    unsigned short T;
+    unsigned short T, A, B;
     scanf("%hu", &T);
     
-    for (int i = 1; i <= T; i++) {
-        unsigned short A, B;
+    for (int t = 1; t <= T; t++) {
         scanf("%hu %hu", &A, &B);
 
-        unsigned short total = A;
-        unsigned short empty = A;
+        unsigned short total = A, empty = A;
         while (empty >= B) {
             total += empty / B;
             empty = empty % B + empty / B;
         }
-        printf("Case #%d: %hu\n", i, total);
+        printf("Case #%d: %hu\n", t, total);
     }
     return 0;
 }
