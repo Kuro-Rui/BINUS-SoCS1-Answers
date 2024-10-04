@@ -4,7 +4,6 @@ int main() {
     unsigned short A;
     scanf("%hu", &A);
 
-    if (A % 2) puts("ODD");
-    else puts("EVEN");
+    puts(A % 2 ? "ODD" : "EVEN");
     return 0;
 }

@@ -7,9 +7,7 @@ int main() {
 
     for (int i = 1; i <= T; i++) {
         scanf("%u %u", &N, &M);
-        printf("Case #%d: ", i);
-        if ((unsigned long long)N * M % 2) puts("Need more frogs");
-        else puts("Party time!");
+        printf("Case #%d: %s\n", i, (unsigned long long)N * M % 2 ? "Need more frogs" : "Party time!");
     }
     return 0;
 }

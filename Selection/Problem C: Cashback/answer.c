@@ -6,9 +6,7 @@ int main() {
 
     for (int i = 1; i <= T; i++) {
         scanf("%hu %hu", &A, &B);
-        printf("Case #%d: ", i);
-        if (A > B) puts("Go-Jo");
-        else puts("Bi-Pay");
+        printf("Case #%d: %s\n", i, A > B ? "Go-Jo" : "Bi-Pay");
     }
     return 0;
 }

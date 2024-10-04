@@ -5,11 +5,9 @@ int main() {
     unsigned int K, N, M;
     scanf("%hu", &T);
 
-    for (int i = 1; i <= T; i++) {
+    for (int t = 1; t <= T; t++) {
         scanf("%u %u %u", &K, &N, &M);
-        printf("Case #%d: ", i);
-        if (N + M >= K) puts("yes");
-        else puts("no");
+        printf("Case #%d: %s\n", t, N + M >= K ? "yes" : "no");
     }
     return 0;
 }
