@@ -17,7 +17,7 @@ int main() {
         long long leftSum = 0;
         unsigned short same = 0;
         for (int i = 0; i < N; i++) {
-            if (leftSum == sum - leftSum) {
+            if (sum == 2 * leftSum) {
                 same = 1;
                 break;
             }
