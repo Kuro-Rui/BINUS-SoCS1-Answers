@@ -18,9 +18,7 @@ int main() {
                 position = ladders[j][1];
                 break;
             }
-        }
-        for (int j = 0; j < 3; j++) {
-            if (position == snakes[j][0]) {
+            else if (position == snakes[j][0]) {
                 position = snakes[j][1];
                 break;
             }
