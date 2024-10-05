@@ -10,33 +10,32 @@ import os
 import re
 from glob import glob
 from pathlib import Path
-from typing import Dict
 
 PDF_REGEX = re.compile(r"prob-([A-Z]+)\.pdf")
 FOLDER_REGEX = re.compile(r"Problem ([A-Z]+): .+")
 
-pdfs: Dict[str, str] = {}
+pdfs: dict[str, str] = {}
 for pdf_path in glob(os.path.join(os.path.expanduser("~/Downloads"), "prob-*.pdf")):
     pdfs[PDF_REGEX.match(os.path.basename(pdf_path)).group(1)] = pdf_path
 if not pdfs:
     print("No PDFs found in Downloads folder.")
     exit(1)
 
-folders = sorted([i for i in os.listdir() if "." not in i and os.path.isdir(Path.cwd() / i)])
-print(f"Select a Contest (1-{len(folders)}): ")
-for i, folder in enumerate(folders, start=1):
-    print(f"{i}. {folder}")
+contests = sorted([i for i in os.listdir() if "." not in i and os.path.isdir(Path.cwd() / i)])
+print(f"Select a Contest (1-{len(contests)}): ")
+for i, contest in enumerate(contests, start=1):
+    print(f"{i}. {contest}")
 
 while True:
     try:
         selection = int(input("Enter the number of the contest: "))
     except ValueError:
-        print(f"Please enter a valid number between 1 and {len(folders)}.")
+        print(f"Please enter a valid number between 1 and {len(contests)}.")
     else:
-        if not 1 <= selection <= len(folders):
-            print(f"Please select a number between 1 and {len(folders)}.")
+        if not 1 <= selection <= len(contests):
+            print(f"Please select a number between 1 and {len(contests)}.")
             continue
-        selected = folders[selection - 1]
+        selected = contests[selection - 1]
         confirmation = input(f"Move all PDFs to {selected} contest? (y/yes/n/no): ")
         if confirmation.lower() in ("y", "yes"):
             contest_folder = os.path.join(os.getcwd(), selected)
