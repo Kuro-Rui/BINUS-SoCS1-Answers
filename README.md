@@ -19,4 +19,6 @@ Collection of my answers for BINUS University Online Judge problems.
   reproduction in any form without the permission of School of Computer Science - BINUS is probihited.
   Violators of this clause may be academically sanctioned.
   ```
+
+  With this, you can only see the problem yourself (if you're a student from School of Computer Science - BINUS) on the SoCS1 website.
 </details>
