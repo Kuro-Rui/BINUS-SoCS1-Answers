@@ -12,13 +12,7 @@ Collection of my answers for BINUS University Online Judge problems.
   
   This was stated at the end of each page in each PDF:
 
-  ```
-  © School of Computer Science - BINUS, 2021. No part of the materials available may be copied,
-  photocopied, reproduced, translated, or reduced to any electronic medium or machine-readable form,
-  in whole or in part, without prior written consent of School of Computer Science - BINUS. Any other
-  reproduction in any form without the permission of School of Computer Science - BINUS is probihited.
-  Violators of this clause may be academically sanctioned.
-  ```
+  > © School of Computer Science - BINUS, 2021. No part of the materials available may be copied, photocopied, reproduced, translated, or reduced to any electronic medium or machine-readable form, in whole or in part, without prior written consent of School of Computer Science - BINUS. Any other reproduction in any form without the permission of School of Computer Science - BINUS is probihited. Violators of this clause may be academically sanctioned.
 
   With this, you can only see the problem yourself (if you're a student from School of Computer Science - BINUS) on the SoCS1 website.
 </details>
