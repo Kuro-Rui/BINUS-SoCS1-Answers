@@ -17,7 +17,6 @@ int main() {
         for (int i = 0; i < X; i++) {
             for (int j = 0; j < X; j++) columnSums[j] += matrix[i][j];
         }
-
         printf("Case #%d:", t);
         for (int i = 0; i < X; i++) printf(" %u", columnSums[i]);
         printf("\n");

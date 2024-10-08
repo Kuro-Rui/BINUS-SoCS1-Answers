@@ -9,8 +9,8 @@ int main() {
 
         int X[N];
         for (int i = 0; i < N; i++) scanf("%d", &X[i]);
-
         printf("Case #%d:", t);
+
         for (int i = N - 1; i >= 0; i--) printf(" %d", X[i]);
         printf("\n");
     }

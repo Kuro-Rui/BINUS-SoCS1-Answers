@@ -11,8 +11,8 @@ int main() {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) scanf("%hd", &table[i][j]);
         }
-
         printf("Case #%d:", t);
+
         for (int i = 0; i < N; i++) {
             int colsum = 0;
             for (int j = 0; j < N; j++) colsum += table[j][i];

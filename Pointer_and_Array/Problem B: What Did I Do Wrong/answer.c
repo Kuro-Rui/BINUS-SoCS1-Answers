@@ -10,8 +10,8 @@ int main() {
         int A[N], B[N];
         for (int i = 0; i < N; i++) scanf("%d", &A[i]);
         for (int i = 0; i < N; i++) scanf("%d", &B[i]);
-
         printf("Case #%d:", t);
+
         for (int i = 0; i < N; i++) printf(" %d", A[i] - B[i]);
         printf("\n");
     }

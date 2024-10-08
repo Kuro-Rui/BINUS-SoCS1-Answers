@@ -17,7 +17,6 @@ int main() {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) speedSums[j] += windSpeeds[i][j];
         }
-
         printf("Case #%d:", t);
         for (int i = 0; i < N; i++) printf(" %llu", speedSums[i]);
         printf("\n");
