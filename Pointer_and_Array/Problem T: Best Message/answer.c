@@ -6,6 +6,7 @@ char nearestVowel(char c) {
     if (c >= 'I' && c <= 'N') return 'I';
     if (c >= 'O' && c <= 'T') return 'O';
     if (c >= 'U' && c <= 'Z') return 'U';
+    return c;
 }
 
 int main() {
