@@ -1,15 +1,40 @@
 #include <stdio.h>
 
-void bubbleSort(unsigned int arr[], unsigned short n) {
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
+void merge(unsigned int* leftArr, unsigned short leftSize, unsigned int* rightArr, unsigned short rightSize, unsigned int* arr) {
+    int i = 0, l = 0, r = 0;
+    while (l < leftSize && r < rightSize) {
+        if (leftArr[l] < rightArr[r]) {
+            arr[i] = leftArr[l];
+            l++;
+        } else {
+            arr[i] = rightArr[r];
+            r++;
         }
+        i++;
     }
+    while (l < leftSize) {
+        arr[i] = leftArr[l];
+        i++;
+        l++;
+    }
+    while (r < rightSize) {
+        arr[i] = rightArr[r];
+        i++;
+        r++;
+    }
+}
+
+void mergeSort(unsigned int* arr, unsigned short length) {
+    if (length <= 1) return;
+    
+    unsigned short middle = length / 2;
+    unsigned int leftArr[middle], rightArr[length - middle];
+    for (int i = 0; i < middle; i++) leftArr[i] = arr[i];
+    for (int i = 0; i < length; i++) rightArr[i - middle] = arr[i];
+
+    mergeSort(leftArr, middle);
+    mergeSort(rightArr, length - middle);
+    merge(leftArr, middle, rightArr, length - middle, arr);
 }
 
 int main() {
@@ -18,7 +43,7 @@ int main() {
 
     unsigned int A[N];
     for (int i = 0; i < N; i++) scanf("%u", &A[i]);
-    bubbleSort(A, N);
+    mergeSort(A, N);
 
     unsigned int X = 1;
     for (int i = 1; i < N; i++) if (A[i] != A[i - 1]) X++;

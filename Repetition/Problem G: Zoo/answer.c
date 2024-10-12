@@ -6,9 +6,9 @@ int main() {
     scanf("%hu", &N);
 
     for (int i = 0; i < N; i++) {
-        unsigned int temp;
-        scanf("%u", &temp);
-        animals += temp;
+        unsigned int animalsInCage;
+        scanf("%u", &animalsInCage);
+        animals += animalsInCage;
     }
     printf("%u\n", animals);
     return 0;
