@@ -23,7 +23,7 @@ int main() {
 		}
 
         // If there are more than 2 stairs, Jojo will only use first and last stairs
-		unsigned short breaths = 0, dead = 0;
+		unsigned short breaths = 0;
 		for (int i = 0; i < N; i++) {
 			if (plots[i] == '1') break;
 			else breaths++;
