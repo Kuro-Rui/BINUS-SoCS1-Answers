@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void merge(unsigned int* leftArr, unsigned short leftSize, unsigned int* rightArr, unsigned short rightSize, unsigned int* arr) {
+void merge(unsigned int leftArr[], unsigned short leftSize, unsigned int rightArr[], unsigned short rightSize, unsigned int arr[]) {
     int i = 0, l = 0, r = 0;
     while (l < leftSize && r < rightSize) {
         if (leftArr[l] < rightArr[r]) {
@@ -24,7 +24,7 @@ void merge(unsigned int* leftArr, unsigned short leftSize, unsigned int* rightAr
     }
 }
 
-void mergeSort(unsigned int* arr, unsigned short length) {
+void mergeSort(unsigned int arr[], unsigned short length) {
     if (length <= 1) return;
     
     unsigned short middle = length / 2;
