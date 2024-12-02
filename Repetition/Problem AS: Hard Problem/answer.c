@@ -9,10 +9,8 @@ int main() {
         scanf("%hu", &N);
 
         char S[N + 1], K[N + 1];
-        scanf("%s", S);
-        getchar();
-        scanf("%s", K);
-        getchar();
+        scanf(" %s", S);
+        scanf(" %s", K);
 
         for (int i = 0; i < N; i++) if (S[i] == K[i]) correct++;
         printf("Case #%d: %hu\n", t, correct * 100 / N);

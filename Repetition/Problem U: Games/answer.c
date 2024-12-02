@@ -11,10 +11,9 @@ int main() {
 
     for (int i = 0; i < T; i++) {
         scanf("%hu", &N);
-        getchar();
 
         char S[N + 1];
-        scanf("%[^\n]", S);
+        scanf(" %[^\n]", S);
 
         Player players[2] = {{0, "Bibi"}, {0, "Lili"}};
         for (int j = 0; S[j] != '\0'; j++) {

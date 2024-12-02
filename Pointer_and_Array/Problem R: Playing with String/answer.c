@@ -10,8 +10,7 @@ int main() {
         scanf("%hu", &M);
 
         for (int i = 0; i < M; i++) {
-            getchar();
-            scanf("%c %c", &A, &B);
+            scanf(" %c %c", &A, &B);
             for (int j = 0; original[j] != '\0'; j++) if (original[j] == A) original[j] = B;
         }
         printf("Case #%d: %s\n", t, original);

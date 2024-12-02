@@ -5,12 +5,10 @@ int main() {
     unsigned short T;
     char S[101];
     scanf("%hu", &T);
-    getchar();
 
     for (int t = 1; t <= T; t++) {
         unsigned short valid = 1, dots = 0;
-        scanf("%100[^\n]", S);
-        getchar();
+        scanf(" %100[^\n]", S);
         printf("Case #%d: ", t);
 
         for (int i = 0; S[i] != '\0'; i++) {
