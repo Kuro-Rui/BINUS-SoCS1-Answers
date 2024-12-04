@@ -30,7 +30,7 @@ void mergeSort(unsigned int arr[], unsigned short length) {
     unsigned short middle = length / 2;
     unsigned int leftArr[middle], rightArr[length - middle];
     for (int i = 0; i < middle; i++) leftArr[i] = arr[i];
-    for (int i = 0; i < length; i++) rightArr[i - middle] = arr[i];
+    for (int i = middle; i < length; i++) rightArr[i - middle] = arr[i];
 
     mergeSort(leftArr, middle);
     mergeSort(rightArr, length - middle);
