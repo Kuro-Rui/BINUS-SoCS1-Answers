@@ -3,25 +3,11 @@
 void merge(unsigned int leftArr[], unsigned short leftSize, unsigned int rightArr[], unsigned short rightSize, unsigned int arr[]) {
     int i = 0, l = 0, r = 0;
     while (l < leftSize && r < rightSize) {
-        if (leftArr[l] < rightArr[r]) {
-            arr[i] = leftArr[l];
-            l++;
-        } else {
-            arr[i] = rightArr[r];
-            r++;
-        }
-        i++;
+        if (leftArr[l] < rightArr[r]) arr[i++] = leftArr[l++];
+        else arr[i++] = rightArr[r++];
     }
-    while (l < leftSize) {
-        arr[i] = leftArr[l];
-        i++;
-        l++;
-    }
-    while (r < rightSize) {
-        arr[i] = rightArr[r];
-        i++;
-        r++;
-    }
+    while (l < leftSize) arr[i++] = leftArr[l++];
+    while (r < rightSize) arr[i++] = rightArr[r++];
 }
 
 void mergeSort(unsigned int arr[], unsigned short length) {
