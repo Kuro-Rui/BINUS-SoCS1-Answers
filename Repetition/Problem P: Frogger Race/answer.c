@@ -3,9 +3,9 @@
 int main() {
     unsigned short T;
     scanf("%hu", &T);
-    
+
+    unsigned int K;
     for (int i = 1; i <= T; i++) {
-        unsigned int K;
         scanf("%u", &K);
 
         unsigned int n = 0;

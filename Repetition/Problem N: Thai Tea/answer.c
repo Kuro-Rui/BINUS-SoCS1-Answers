@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    unsigned short T;
+    unsigned short T, A, B;
     scanf("%hu", &T);
     
     for (int i = 1; i <= T; i++) {
-        unsigned short A, B;
         scanf("%hu %hu", &A, &B);
 
         unsigned short total = A;

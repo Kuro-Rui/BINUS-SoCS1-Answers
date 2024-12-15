@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    unsigned short T;
+    unsigned short T, N;
     scanf("%hu", &T);
     
     for (int i = 1; i <= T; i++) {
-        unsigned short N;
         scanf("%hu", &N);
 
         unsigned int X[N];

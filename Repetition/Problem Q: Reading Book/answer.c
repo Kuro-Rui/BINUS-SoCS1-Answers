@@ -3,9 +3,9 @@
 int main() {
     unsigned short T;
     scanf("%hu", &T);
-    
+
+    unsigned int N, X;    
     for (int i = 1; i <= T; i++) {
-        unsigned int N, X;
         scanf("%u %u", &N, &X);
 
         unsigned int frontFlips = X / 2;

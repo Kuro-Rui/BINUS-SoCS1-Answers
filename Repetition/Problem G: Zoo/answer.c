@@ -2,11 +2,10 @@
 
 int main() {
     unsigned short N;
-    unsigned int animals = 0;
     scanf("%hu", &N);
 
+    unsigned int animalsInCage, animals = 0;
     for (int i = 0; i < N; i++) {
-        unsigned int animalsInCage;
         scanf("%u", &animalsInCage);
         animals += animalsInCage;
     }

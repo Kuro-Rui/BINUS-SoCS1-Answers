@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    unsigned short N, Q;
+    unsigned short N, Q, A, B;
     scanf("%hu", &N);
 
     unsigned short views[N];
@@ -9,7 +9,6 @@ int main() {
 
     scanf("%hu", &Q);
     for (int i = 1; i <= Q; i++) {
-        unsigned short A, B;
         scanf("%hu %hu", &A, &B);
 
         unsigned short sum = 0;
