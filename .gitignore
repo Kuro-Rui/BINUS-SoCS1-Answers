@@ -10,6 +10,3 @@ prob-*.pdf
 
 # VSCode Stuff
 .vscode/*
-
-# Incomplete
-Function_and_Recursion/*
